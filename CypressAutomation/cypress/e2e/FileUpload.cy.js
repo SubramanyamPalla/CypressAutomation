@@ -62,9 +62,10 @@ describe("Uploads",()=>{
 
     })
 
-    it.only("upload multiple files",()=>{
+    it("upload multiple files",()=>{
         cy.visit("https://davidwalsh.name/demo/multiple-file-upload.php")
-       cy.get("#filesToUpload").attachFile(['UserData.txt','Testdata.pdf','Screenshot.jpg'])
+       
+        cy.get("#filesToUpload").attachFile(['UserData.txt','Testdata.pdf','Screenshot.jpg'])
        // cy.get("#filesToUpload").selectFile(['UserData.txt','Testdata.pdf','Screenshot.jpg'],{force:true})
     })
 
