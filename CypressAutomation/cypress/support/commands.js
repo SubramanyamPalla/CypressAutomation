@@ -11,23 +11,25 @@
 //
 import testData from '../fixtures/LoginTest.json'
 import 'cypress-file-upload';
+import data from '../fixtures/RegistrationData.json'
+
 
 // -- This is a parent command --
 Cypress.Commands.add('login', (email, password) => {
 
- })
+})
 //
-Cypress.Commands.add("LoginFunctionality",()=>{
-    cy.get('#username').type("username")
-    cy.get('#passwrd').type('pass')
-    cy.get('#login').click()
+Cypress.Commands.add("LoginFunctionality", () => {
+  cy.get('#username').type("username")
+  cy.get('#passwrd').type('pass')
+  cy.get('#login').click()
 })
 
 Cypress.on('uncaught:exception', (err, runnable) => {
-    // returning false here prevents Cypress from
-    // failing the test
-    return false
-  })
+  // returning false here prevents Cypress from
+  // failing the test
+  return false
+})
 //
 // -- This is a child command --
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
@@ -41,27 +43,27 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 //Syntax for creating custom commands
 
-Cypress.Commands.add('LoginWithValidCredentials',(email,password)=>{
+Cypress.Commands.add('LoginWithValidCredentials', (email, password) => {
 
   cy.visit('https://naveenautomationlabs.com/opencart/index.php?route=account/login');
   cy.get('[id="input-email"]').type(email);
   cy.get('[id="input-password"]').type(password);
-  cy.get('[type="submit"]').eq(0).click();  
+  cy.get('[type="submit"]').eq(0).click();
 })
 
-Cypress.Commands.add('VerifyHomePageProductLength',(productNo)=>{
+Cypress.Commands.add('VerifyHomePageProductLength', (productNo) => {
 
   cy.visit("https://naveenautomationlabs.com/opencart/index.php?route=common/home")
 
   //Findout product
-  cy.get(".image").should('have.length',productNo)
+  cy.get(".image").should('have.length', productNo)
 
 })
 
-Cypress.Commands.add("verifyProductsLengthOnCategoryPage",(noOfProduct)=>{
+Cypress.Commands.add("verifyProductsLengthOnCategoryPage", (noOfProduct) => {
   cy.visit("https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=20")
 
-  cy.get(".image").should('have.length',noOfProduct)
+  cy.get(".image").should('have.length', noOfProduct)
 })
 
 // Cypress.Commands.add("HRMLogin", (username,pass)=>{
@@ -71,22 +73,38 @@ Cypress.Commands.add("verifyProductsLengthOnCategoryPage",(noOfProduct)=>{
 //     cy.get('input[name="username"]').type(username)
 //     cy.get('input[name="password"]').type(pass)
 //     cy.get('button[type="submit"]').click()
-  
+
 //   })
-  
+
 // })
 
 
-Cypress.Commands.add(("HRMLogin"),(username,password)=>{
+Cypress.Commands.add(("HRMLogin"), (username, password) => {
 
 
-  cy.session(("Login Session"),()=>{
+  cy.session(("Login Session"), () => {
 
     cy.visit("/web/index.php/auth/login")
     cy.get('input[name="username"]').type(username)
     cy.get('input[name="password"]').type(password)
     cy.get('button[type="submit"]').click()
 
-})  
+  })
+
+})
+
+
+Cypress.Commands.add("Parabank_registration", () => {
+
+  //Enter firstname
+
+  cy.visit(data.url)
+  cy.get('input[name="customer.firstName"]').type(data.Fname)
+
+
+
+
+
+
 
 })
