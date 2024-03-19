@@ -9,16 +9,22 @@ describe('Validate different tests in Orange HRM ', () => {
 
         cy.visit("/web/index.php/time/viewEmployeeTimesheet")
         //continue writing your script here
-        cy.get('[type="button"]').eq(2).click()
+        cy.get('[type="butto"]').eq(2).click()
 
     })
 
     //Cypress will clear the cookies and temparatory storage details
 
-    it('Validate Myinfo page ', function () {
-
+    it.only('Validate Myinfo page ', function () {
         cy.visit("/web/index.php/pim/viewMyDetails")
         //continue writing your script here
+        /* ==== Generated with Cypress Studio ==== */
+        cy.get(':nth-child(1) > .oxd-main-menu-item > .oxd-text').click();
+        cy.get('.orangehrm-header-container > .oxd-button').click();
+        cy.get('.oxd-button--ghost').click();
+        cy.get('.orangehrm-header-container > .oxd-button').should('be.visible');
+        cy.get('.oxd-form-actions > .oxd-button--secondary').should('have.text', ' Search ');
+        /* ==== End Cypress Studio ==== */
     })
 
 
@@ -40,5 +46,7 @@ describe('Validate different tests in Orange HRM ', () => {
 
 
     })
+
+
 
 })

@@ -2,7 +2,7 @@
 
 describe('DOM Elements Access', () => {
 
-    it.only('Remove Target value from DOM', () => {
+    it('Remove Target value from DOM', () => {
 
         //Visit the website
         cy.visit('https://www.letskodeit.com/practice')

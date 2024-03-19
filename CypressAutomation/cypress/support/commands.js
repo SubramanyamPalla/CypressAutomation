@@ -12,6 +12,7 @@
 import testData from '../fixtures/LoginTest.json'
 import 'cypress-file-upload';
 import data from '../fixtures/RegistrationData.json'
+import 'cypress-iframe';
 
 
 // -- This is a parent command --
