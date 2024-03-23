@@ -2,7 +2,7 @@ describe('Validate different tests in Orange HRM ', () => {
 
     beforeEach(function () {
 
-       cy.HRMLogin("Admin","admin123")     
+        cy.HRMLogin("Admin", "admin123")
     })
 
     it('Validate timesheet page ', function () {
@@ -15,7 +15,7 @@ describe('Validate different tests in Orange HRM ', () => {
 
     //Cypress will clear the cookies and temparatory storage details
 
-    it.only('Validate Myinfo page ', function () {
+    it('Validate Myinfo page ', function () {
         cy.visit("/web/index.php/pim/viewMyDetails")
         //continue writing your script here
         /* ==== Generated with Cypress Studio ==== */
