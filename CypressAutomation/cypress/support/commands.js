@@ -102,10 +102,81 @@ Cypress.Commands.add("Parabank_registration", () => {
   cy.visit(data.url)
   cy.get('input[name="customer.firstName"]').type(data.Fname)
 
+})
+
+Cypress.Commands.add('test', () => {
+  cy.visit("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager")
+
+  const addcustomer = cy.get('[ng-class="btnClass1"]')
+  addcustomer.click()
+
+  var fname = cy.get('[ng-model="fName"]')
+  fname.type('Test')
+
+  var lname = cy.get('[ng-model="lName"]')
+  lname.type('Test1')
+
+  var pname = cy.get('[ng-model="postCd"]')
+  pname.type('500018')
 
 
-
-
-
+  var button = cy.get('[class="btn btn-default"]')
+  button.click()
 
 })
+
+Cypress.Commands.add('SelectADateValue', (day) => {
+  //Visit website
+  cy.visit('https://www.globalsqa.com/demo-site/datepicker/')
+
+  //Findout iframe
+  cy.frameLoaded('[class="demo-frame lazyloaded"]')
+
+  //Click on date picker inside the iframe
+  cy.iframe('[class="demo-frame lazyloaded"]').find('#datepicker').click()
+
+  //31 matched elements
+  cy.iframe('[class="demo-frame lazyloaded"]').find('tbody>tr>td>a')
+    .each((ele) => {
+
+      let datevalues = ele.text()
+
+      //cy.log(datevalues)
+
+      if (datevalues == day) {
+        cy.wrap(ele).click()
+      }
+
+      // for (let i = 0; i <= datevalues; i++) {
+      //   cy.wrap(ele).click({force:true})
+
+      // }
+
+
+
+    })
+
+  })
+
+  Cypress.Commands.add('twoMonthsCalendar', (monthvalue,days) => {
+
+    cy.viewport(1920, 1024)
+    cy.visit('https://jqueryui.com/datepicker/#date-range')
+
+    cy.frameLoaded('.demo-frame').should('be.visible')
+
+    cy.iframe('.demo-frame').find('.hasDatepicker').eq(monthvalue).scrollIntoView().click()
+
+    cy.iframe('.demo-frame').find('.ui-datepicker-calendar').first().find('tbody>tr>td>a')
+      .each((ele) => {
+        let eletext = ele.text()
+
+        if (eletext == days) {
+          cy.wrap(ele).click()
+        }
+
+
+      })
+
+    cy.iframe('.demo-frame').find('.ui-datepicker-calendar').first().scrollIntoView()
+  })

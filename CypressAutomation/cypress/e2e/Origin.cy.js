@@ -29,7 +29,7 @@ describe('Multiple domains', () => {
         })
     })
 
-    it("Implement given scenarios in below websit", () => {
+    it("Implement given scenarios in below website", () => {
         cy.visit('https://automationexercise.com/')
 
 
@@ -37,7 +37,9 @@ describe('Multiple domains', () => {
 
     it("Dummy payment cards details", () => {
 
-        cy.visit('https://support.bluesnap.com/docs/test-credit-card-numbers')
+        cy.visit('https://support.bluesnap.com/docs/test-credit-card-numbers',{timeouts:2000})
+
+        
 
 
     })

@@ -169,7 +169,7 @@ describe("Handling iframes", () => {
         
     })
 
-    it.only('Iframe interactions with cypress-iframe addon',()=>{
+    it('Iframe interactions with cypress-iframe addon',()=>{
         cy.visit('https://qaboxletstestcypresspracticesite.netlify.app/iframepage')
 
         //Finding iframe 
@@ -196,7 +196,7 @@ describe("Handling iframes", () => {
 
     it('Iframes method1', () => {
 
-        let ele1
+   
 
         cy.visit("https://practice.expandtesting.com/iframe")
 
@@ -204,9 +204,11 @@ describe("Handling iframes", () => {
 
         //cy.get('#iframe-youtube').its('0.contentDocument.body').should('be.visible').then(cy.wrap)
         cy.get('#iframe-youtube').then((ele) => {
-            ele1 = ele.find('button.ytp-play-button.ytp-button')
+            let ele1 = ele.find('button.ytp-play-button.ytp-button')
 
-            cy.wrap(ele1).click()
+            cy.wrap(ele1).as('button')
+
+            cy.get('@button').click()
 
         })
 
