@@ -4,11 +4,12 @@ describe("Read the data from fixtures", () => {
 
     beforeEach(() => {
         
-        cy.fixture('Login.json').then(function (data) {
+        cy.fixture('Login.json').then( function (data) {
            this.value=data            
 
         //Launch the site
         cy.visit(this.value.URL)
+
         })
 
        
@@ -16,7 +17,7 @@ describe("Read the data from fixtures", () => {
     })
 
 
-    it.only('Login test', () => {
+    it.only('Login test', function() {
 
        
         //Enter user email id

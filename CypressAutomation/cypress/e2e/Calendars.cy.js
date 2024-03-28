@@ -2,7 +2,7 @@ describe('Calendar handling', () => {
     it('Handling calendars', () => {
         cy.visit('https://commitquality.com/add-product')
 
-        cy.get('[data-testid="product-textbox"]').type('NewProduct')
+        cy.get('[data-testid="product-textbox"]',{timeout:2000}).type('NewProduct')
 
         cy.get('[data-testid="price-textbox"]').clear().type('123')
 
@@ -74,12 +74,21 @@ describe('Calendar handling', () => {
         // cy.get('#onetrust-accept-btn-handler').click()
 
         // //click on date picker
-        // cy.get('.startDateWrapper > .mat-form-field > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix').as('datepicker')
+        cy.get('.startDateWrapper > .mat-form-field > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix').as('datepicker')
         // cy.get('@datepicker').first().click({force:true})
         
     })
 
-    it.only('paytm travels task ',()=>{
+    it('paytm travels task ',()=>{
         cy.visit('https://tickets.paytm.com/flights/')
+
+        cy.wait(2000)
+        cy.get('#flightSearch').as('searchButton')
+        cy.get('@searchButton').should('be.visible')
+        cy.get('@searchButton').click()
+    })
+
+    it('Practice tests URL',()=>{
+        cy.visit('https://www.vskills.in/practice/cypress-questions-practice-test')
     })
 })
