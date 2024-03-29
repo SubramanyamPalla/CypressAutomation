@@ -6,7 +6,7 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=subramanyampalla&label=Profile%20views&color=0e75b6&style=flat" alt="subramanyampalla" /> </p>
 
 - 🔭 I’m currently working on (https://www.interflora.co.uk/ as Senior Test Engineer)
-- 🌱 I’m currently learning **Cypress, Mocha**
+- 🌱 I’m currently learning **Cypress, Mocha,Javascript**
 - 📫 How to reach me **subbu99ts@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
