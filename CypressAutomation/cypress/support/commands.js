@@ -25,7 +25,7 @@ Cypress.Commands.add("LoginFunctionality", () => {
   cy.get('#passwrd').type('pass')
   cy.get('#login').click()
 })
-
+//If website is not loaded and getting uncaught exception error need to update below line
 Cypress.on('uncaught:exception', (err, runnable) => {
   // returning false here prevents Cypress from
   // failing the test
