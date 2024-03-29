@@ -10,9 +10,7 @@ describe("Read the data from fixtures", () => {
         //Launch the site
         cy.visit(this.value.URL)
 
-        })
-
-       
+        }) 
 
     })
 
