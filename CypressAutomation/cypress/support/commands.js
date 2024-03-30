@@ -9,17 +9,14 @@
 // ***********************************************
 //
 //
-import testData from '../fixtures/LoginTest.json'
+
+//import data from '../fixtures/test_data.json'
 import 'cypress-file-upload';
-import data from '../fixtures/RegistrationData.json'
 import 'cypress-iframe';
 
 
-// -- This is a parent command --
-Cypress.Commands.add('login', (email, password) => {
 
-})
-//
+
 Cypress.Commands.add("LoginFunctionality", () => {
   cy.get('#username').type("username")
   cy.get('#passwrd').type('pass')
@@ -67,24 +64,24 @@ Cypress.Commands.add("verifyProductsLengthOnCategoryPage", (noOfProduct) => {
   cy.get(".image").should('have.length', noOfProduct)
 })
 
-// Cypress.Commands.add("HRMLogin", (username,pass)=>{
+Cypress.Commands.add("HRMLogin", (username,pass)=>{
 
-//   cy.session("loginsession", ()=>{
-//     cy.visit("/web/index.php/auth/login")
-//     cy.get('input[name="username"]').type(username)
-//     cy.get('input[name="password"]').type(pass)
-//     cy.get('button[type="submit"]').click()
+  cy.session("loginsession", ()=>{
+    cy.visit("/web/index.php/auth/login")
+    cy.get('input[name="username"]').type(username)
+    cy.get('input[name="password"]').type(pass)
+    cy.get('button[type="submit"]').click()
 
-//   })
+  })
 
-// })
+})
 
 
 Cypress.Commands.add(("HRMLogin"), (username, password) => {
 
 
   cy.session(("Login Session"), () => {
-
+    cy.visit('https://demo.guru99.com/V1/index.php')
     cy.visit("/web/index.php/auth/login")
     cy.get('input[name="username"]').type(username)
     cy.get('input[name="password"]').type(password)

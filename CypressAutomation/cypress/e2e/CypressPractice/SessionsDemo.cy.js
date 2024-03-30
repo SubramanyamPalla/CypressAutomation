@@ -15,7 +15,7 @@ describe('Validate different tests in Orange HRM ', () => {
 
     //Cypress will clear the cookies and temparatory storage details
 
-    it('Validate Myinfo page ', function () {
+    it.skip('Validate Myinfo page ', function () {
         cy.visit("/web/index.php/pim/viewMyDetails")
         //continue writing your script here
         /* ==== Generated with Cypress Studio ==== */

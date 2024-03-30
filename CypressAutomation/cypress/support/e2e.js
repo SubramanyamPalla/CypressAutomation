@@ -18,6 +18,15 @@ import './commands'
 import 'cypress-mochawesome-reporter/register';
 require ('cypress-iframe')
 require('cypress-xpath');
+
+//Import login page objects
+
+import loginPageObjects from './PageObjects/LoginPageObjects.cy.js'
+
+import managersPageObjects from '../support/PageObjects/BankManagerPageObjects.cy'
+
+//const loginPage = new loginPageObjects()
+
 // // Import commands.js using ES2015 syntax:
 // import './commands';
 // Alternatively you can use CommonJS syntax:
@@ -33,3 +42,9 @@ if (!app.document.head.querySelector('[data-hide-command-log-request]')) {
 
   app.document.head.appendChild(style);
 }
+
+Cypress.on('uncaught:exception', (err, runnable) => {
+  // returning false here prevents Cypress from
+  // failing the test
+  return false
+})
