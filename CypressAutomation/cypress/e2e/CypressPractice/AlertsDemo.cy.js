@@ -10,6 +10,7 @@
 8. https://demoqa.com/alerts
 9. https://demo.guru99.com/test/delete_customer.php
 10. https://qa-practice.netlify.app/alerts
+11. https://testautomationpractice.blogspot.com/
 */
 
 describe("alets handling",()=>{
