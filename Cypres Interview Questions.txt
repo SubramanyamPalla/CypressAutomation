@@ -1,0 +1,91 @@
+Inter View Questions:
+
+In GenPact:
+
+1. How to execute your spec file? what is the process?
+2.What is Cypress Grep
+3.What is Environment Variables in cypress?
+4.Suppose i have an array 1 3 4 6 5 and write javascript to put it on order?
+5.How to create the test suite in cypress?
+6.Explain about the frame work?
+7.How can we check the automation feasibility?
+8.What is the process to automate the application? from start to end
+9.Difference between smoke and sanity
+10. what is product backlog and sprint backlog
+11.what id retro spective
+12.What is burn up and burndown charts
+13.What is epic
+14.What is task?
+15.At what basis we decide the story points?
+16.What is Test plan and Test Strategy?
+17.Types of assertions in cypress?
+
+
+
+In GalaxE Solutions India Pvt Ltd:
+
+1.Tell me about your self
+2.Diff B/w smoke and sanity
+3.What is functional and Non functional testing?
+4.Tell the some non functional tool names?
+5.What is agile model and explaing it
+6.If u get any production issue what is the steps we follow?
+7.Suppose i dont have sufficient time to test the application we have to release the build to the custome by EOD.How can to test the application?
+8.How to release the build to client and what are the test deliverables we provide to the customer
+9.What is Environment Variables in cypress?
+10.What is preserve cookies in cypress?
+11.What is skip in cypress
+12.How to get the hidden elements in cypress?
+13.What are the advantages and disadvantages of cypress
+14.Diff between selenium and cypress?
+15. Why we are using cypress tolls.How its helpful to do the automation?
+16. After pusing the code to repository, if we get conflits what we will do?
+17.Suppose if ur working one branch, so now if u want to create the new branch? how to do that?
+18.Suppose if ur working latest version of cypress you installed some packages and u used some import and require functions and you created PR and that code merge to master. 
+if ur team member want to pull the same branch what will happen but he is using lower version of cypress so some packages will not work.In this case what he will do, he want to install the all denpendencies and he want to change the cypress version. 
+
+In Cignity:
+
+1. what is diff between var and let
+2.Diff between GET and CONTAINS
+3. How to run the spec file? and how to open the cypress window
+4.which selectors cypress support?
+5.Cypress supports XPath?
+6.What is shadow DOM and how to handle that DOM elements?
+7.How to generate reports from the cypress?
+8.How to read the data from the excel file?
+9.what is function?
+10.How to do the file upload in cypress
+11.What is fixtures?
+12.Explain the cypress folder structure
+13.What is custom commands in cypress?
+14.Suppose i have a webtable, i want to verify the value which have in 4th row 4 column
+15.Suppose i have a web table, in a 3rd row 5th column i have two buttons like edit and delete. i want to click the button edit. how to write the script in cypress?
+16.How to verify the button visible in the application or not
+17.How to verify the URL
+18.How to use the Xpath in cypress and write the sample script?
+19.How to verify the title ?
+20.shall we do the parallel execution in cypress?
+21. cypress and selenium supports API testing? Yes or No?
+22.Cypress supports the BDD?
+23.I have to verify the text of the elements. how can we verify that?
+24.In production for every release we getting the one issue. what is the terminology to called that type of issue?
+25.Suppose u posted one issue, in dev environment its reproducing what the step of actions u take?
+26. suppose today we have to relase the patch to the customer but unfortunately we get an critical bug what is step of actions we will take?
+27.what is bug life cycle?
+
+
+
+
+
+ 
+
+Cypress is a syncronous or Asyncronus
+In a cypress i have normal method and cypress method which one will execute first
+
+
+
+
+
+
+
