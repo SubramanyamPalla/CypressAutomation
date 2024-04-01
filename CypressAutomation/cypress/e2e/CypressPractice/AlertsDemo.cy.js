@@ -1,4 +1,16 @@
-
+//Alerts example sites
+/* 
+1. https://www.letskodeit.com/practice
+2.https://demo.automationtesting.in/Alerts.html
+3. https://the-internet.herokuapp.com/javascript_alerts
+4. https://letcode.in/alert
+5. https://www.hyrtutorials.com/p/alertsdemo.html
+6. https://testpages.herokuapp.com/styled/alerts/alert-test.html
+7. https://artoftesting.com/samplesiteforselenium
+8. https://demoqa.com/alerts
+9. https://demo.guru99.com/test/delete_customer.php
+10. https://qa-practice.netlify.app/alerts
+*/
 
 describe("alets handling",()=>{
 
