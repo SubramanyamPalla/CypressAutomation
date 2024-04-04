@@ -3,10 +3,18 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
+  numTestsKeptInMemory: 50,
+
+  experimentalSessionAndOrigin:true,
+  //retries: 2,
   reporterOptions: {
+    reportFilename :"Mocha Report",
     charts: true,
-    reportPageTitle: 'Mocha Awesome Report',
+    reportPageTitle: 'Mocha Awesome Report -Test Suite',
     embeddedScreenshots: true,
+    reportDir: "cypress/results",
+    videoOnFailOnly: true,
+    code: false,
     inlineAssets: true,
     saveAllAttempts: false,
     autoOpen: true,
@@ -14,9 +22,11 @@ module.exports = defineConfig({
   },
 
   e2e: {
-    "baseUrl": "https://opensource-demo.orangehrmlive.com",
+   
+    experimentalStudio: true,
 
     setupNodeEvents(on, config) {
+      
 
 
       require('cypress-mochawesome-reporter/plugin')(on);

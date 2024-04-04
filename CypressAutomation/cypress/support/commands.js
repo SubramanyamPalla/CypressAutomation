@@ -17,6 +17,7 @@ import 'cypress-iframe';
 
 
 
+
 Cypress.Commands.add("LoginFunctionality", () => {
   cy.get('#username').type("username")
   cy.get('#passwrd').type('pass')

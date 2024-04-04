@@ -17,11 +17,16 @@ describe('XYZ bank Suite', () => {
 
     })
 
+
+    //10 times run 
+
+   
     it('Click on manager login button', function () {
 
         //Clicking on manager login button
         cy.clickOnMangerLoginButton()
     })
+
 
 
 })

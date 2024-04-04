@@ -16,6 +16,7 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 import 'cypress-mochawesome-reporter/register';
+
 require ('cypress-iframe')
 require('cypress-xpath');
 
@@ -24,6 +25,8 @@ require('cypress-xpath');
 import loginPageObjects from './PageObjects/LoginPageObjects.cy.js'
 
 import managersPageObjects from '../support/PageObjects/BankManagerPageObjects.cy'
+
+//import {faker} from '@faker-js/faker'
 
 //const loginPage = new loginPageObjects()
 

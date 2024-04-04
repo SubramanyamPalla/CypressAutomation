@@ -4,13 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "AwesomeReport": "npx cypress run --spec cypress/e2e/FileUpload.cy.js --browser chrome --headed",
+    "Cypress-Open": "npx cypress open"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
     "cypress": "^13.6.6",
     "cypress-file-upload": "^5.0.8",
-    "cypress-mochawesome-reporter": "^3.8.2"
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-xpath": "^2.0.1"
   }
 }
