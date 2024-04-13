@@ -1,4 +1,4 @@
-let a;
-let b;
+// let a;
+// let b;
 
-const c=0
+// const c=0

@@ -18,4 +18,17 @@ describe('Registration Flow', () => {
         cy.contains('Your Account Has Been Created!').should('exist')
 
     })
+
+    it.only('XYZ',()=>{
+        cy.visit('https://www.globalsqa.com/angularJs-protractor/BankingProject/#/customer')
+
+        cy.get("select[id='userSelect']").select('5')
+
+        cy.title().then((data)=>{
+            //let tdata=data.text()
+            cy.log(data)
+        })
+
+        
+    })
 })
