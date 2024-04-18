@@ -1,0 +1,45 @@
+Roles and Responsibilities
+==========================================================
+
+2 members team already there
+
+---> Addon to the team
+
+1) Welcome on board --> HR team will introduce the QA Team Lead or Manager or Senior QA Member
+
+2) HR Team- KT Sessions- TO explain the terms & conditions, leave plicies, company benifits and company culture - 1/2 day
+
+3) Team introduction --> QA Lead--> newly joined team member introduce to the entire QA team
+	a) HR Team will loop the Support team in email, QA Team Lead--> Require software details will share to the Support team
+
+4) Support team activities--> Laptop issueing,User Name& Password details, Joning KIT issue, Email accounts setup, Required softswares instalations, Accessess, 
+
+==============================================================================================
+QA Team will arrange the Demo/KT Sessions
+==============================================================================================
+
+1) What the project --who is the client---Which tools we are using -- which technologies we are using to implement the application
+2) Application architechure overview
+3) Third party system integration
+4) Which team you are going to join or work-- Which project
+==============================================================================================
+Roles and Responsibilities
+==============================================================================================
+
+1) Attending the KT sessions
+2) Getting knowledge on application domain
+3) Interacting with new team members
+4) If we have any documents, going through 
+5) If you have any doubts or queries make a note and get the clarification from senior resource or team lead
+6) Checking the automation existing scipts 
+7) Going throug the test scenarios document 
+8) Getting the existing code from GIT to your local
+9) Joining the internal meetings
+10) Start exploring the assinged tasks
+11) Prepare the test cases/ scenarios based on user stories
+12) Attend the automation meeting to select the test scenarios for automating
+13) Start the writing test scritps based on allocated scenarios
+14) Attending the scrum calls to give the updates
+15) Once the code is ready from your end need to raise a PR-Pull Request - GT HUB
+16) Assign the reviewer to check the written code
+
