@@ -1,0 +1,32 @@
+1. Can you brief me about yourself?
+Hi, my name is XXX.
+I started my career as a Testing Executive 4.5 years back with Infosys currently I am working as Test
+Engineer.
+
+My responsibility is to understand Business Requirement Specification and High-Level scenarios and to
+convert them into test cases & Automation scripts if required.
+Execution of test cases and reporting of defect to the developer if there any and get them fixed.
+I have experience on Functional, Automation, Regression, Smoke, Sanity, Web accessibility, Web
+Analytics, Mobile Testing.
+
+In my previous project I have worked on Automation testing where we have used Cypress with javascript and
+POM(Page Object Model) .We have used Page object model where we have
+separated our test cases with page objects, and we performed testing on the same. For build
+management tool we are using Bitbucket for version controlling we are using Git and for automating our
+jobs for nightly run or any schedule we are using BrowseStack,.
+
+For defect management & test case management we have used JIRA, TEST RAIL & HP ALM.
+I have worked on tools like BrowseStack, DeviceAnywhere, Toadsql,
+I am working on Agile environment we have daily standup call and we have 2-week sprint cycle. I am part
+of 8-member team out of which we are 3-Tester, 2- dev, 1- manager, 1-scrum master.
+
+• Tell me your Day to Day activities as QA?
+First thing I do after login in my system. I check the active sprint in Jira for our project code. There I can
+see my assigned open tasks. After that I will check my mail if there is any important mail I need to take
+action on. Then we have our daily scrum meeting where we used to tell our previous day actions what we
+did, what we are planning for today and if we have any blocker to discuss. Product owner and scrum
+master help us to resolve that blocker. After that I need to take the pending task and do needed action
+whether creating test case, Execution, Defect retesting if any.
+• Do you have created framework from scratch, or you have maintained that?
+I have not created Framework from scratch by myself but yes, I was part of framework creation and
+created some part of it.
